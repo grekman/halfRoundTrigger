@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.trigger-body {
+  margin: 20px auto;
+  width: 900px;
+  height: 900px;
+  background: black;
+
+
+
+
+}
