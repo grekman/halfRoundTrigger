@@ -4,14 +4,22 @@ var padding = 5;
 console.log(position);
 
 document.querySelector('.trigger-body').onmousemove = function(event) {
-  console.log(event.offsetX);
 
-if (event.offsetX < 300) {
+  var inProcent = event.offsetX*100/(event.toElement.clientWidth);
+  console.log(document.querySelector('.trigger-body').style.width);
+console.log(inProcent);
+if (inProcent < 32) {
   document.querySelector('img').src = 'img/1ru.png';
-} else if (event.offsetX > 300 && event.offsetX < 600) {
+  document.querySelector('img').onclick = function() {
+    location.href ="http://ya.ru"};
+} else if (inProcent >= 32 && inProcent < 72) {
   document.querySelector('img').src = 'img/2ru.png';
-} else if (event.offsetX >= 600) {
+  document.querySelector('img').onclick = function() {
+    location.href ="http://google.com"};
+} else if (inProcent >= 72) {
   document.querySelector('img').src = 'img/3ru.png';
+  document.querySelector('img').onclick = function() {
+    location.href ="http://bing.com"};
 }
 
 document.querySelector('.trigger-body').onmouseout = function() {

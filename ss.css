@@ -6,11 +6,15 @@
 
 .trigger-body {
   margin: 20px auto;
-  width: 900px;
-  height: 900px;
+  width: 50%;
+
   background: black;
 
 
 
 
+}
+
+img {
+  width: 100%;
 }
